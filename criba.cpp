@@ -10,14 +10,8 @@ int llenar(){
         for(int j=2; i*j<=MAX; j++){
             num[i*j]=1;
         }
-                //cout<<pos<<"    "<<contador<<"\n";
-
-
-
-    }
-
-
-
+    //cout<<pos<<"    "<<contador<<"\n";
+}
 
 int main(){
     ios_base::sync_with_stdio(0);
