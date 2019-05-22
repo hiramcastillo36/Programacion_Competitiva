@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<iostream>
+using namespace std;
+
+int main(){
+    float a, b;
+    float n;
+    cin>>a>>b;
+    n=a/b;
+    printf("%.2f",n);
+    cout<<" mol";
+}
