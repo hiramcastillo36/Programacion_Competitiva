@@ -1,0 +1,15 @@
+
+using namespace std;
+
+int main(){
+    int n;
+    cin>>n;
+    if(n>=0&&n<7)
+        cout<<"ACIDO";
+    else if(n==7)
+        cout<<"NEUTRO";
+    else if(n>7&&n<=14)
+        cout<<"BASE";
+    else
+        cout<<"Are you kidding me?";
+}
