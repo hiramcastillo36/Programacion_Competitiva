@@ -11,27 +11,23 @@ int llenar(){
             num[i*j]=1;
         }
     //cout<<pos<<"    "<<contador<<"\n";
+    return 0;
 }
 
 int main(){
     ios_base::sync_with_stdio(0);
-    cin.tie(0);
+    cin.tie(nullptr);
     long long int n, m;
     cin>>n;
-   llenar();
+    llenar();
   // cout<<endl;
     num[1]=1;
-   for(int i=0; i<n; i++){
+    for(int i=0; i<n; i++){
         cin>>m;
-        if(num[m]==0){
+        if(num[m]==0)
            cout<<"SI";
-
-   }
-        if(num[m]==1){
+        if(num[m]==1)
            cout<<"NO";
-
-        }
-    cout<<"\n";
+        cout<<"\n";
     }
-
 }

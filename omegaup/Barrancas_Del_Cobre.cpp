@@ -1,10 +1,31 @@
-#include <bits/stdc++.h>
-#define forik(i, j, k, in) for (int i=j; i<k; i+=in)
-#define forn(n, in) for (int i=0; i<n; i+=in)
+#include <iostream>
+#include <algorithm>
+#define MAX 100000
+int ba[MAX];
+int emosi[MAX];
+int emo, pos;
 using namespace std;
 
-
 int main(){
-    int n, k; cin>>n>>k;    
-    forn(n, 1)cout<<i;
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+    int n,k,a,b, max_emocion=0;
+    cin>>n>>k;
+    pos=1;
+    int contador=0;
+    for(int i=0; i<n; i++)
+        cin>>ba[i];
+        int i=k-1;
+    while(i<n){
+       i++;
+        max_emocion=max(max_emocion, ba[i]-ba[i-k+1]);
+        
+    }
+  //  for(int i=0; i<pos; i++)
+   //     cout<<emosi[i]<<" ";
+    //cout<<endl;
+    
+    //for(int i=0; i<pos; i++)
+        //cout<<emosi[i]<<" ";
+    cout<<max_emocion;
 }
