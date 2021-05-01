@@ -8,14 +8,14 @@ typedef long long int lli;
 vector <lli> vll;
 
 void solve(){
-    
+
 }
 
 int main(){
     ios_base::sync_with_stdio(false); cin.tie(nullptr);
-    lli n; cin>>n;    
+    lli n; cin>>n;
     forn(n, 1){
-        
+
     }
     solve();
     return 0;

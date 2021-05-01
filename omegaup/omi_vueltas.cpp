@@ -1,9 +1,9 @@
 #include <iostream>
-#define MAX 1300
+#define MAX 1500
 int mx[MAX][MAX];
 using namespace std;
 
-int h(int n, int m){
+void h(int n, int m){
     int r=1;
      for(int i=1; i<=n; i++){
         r=1;
@@ -16,7 +16,7 @@ int h(int n, int m){
     }
 }
 
-int v(int n, int m){
+void v(int n, int m){
     int r=1;
      for(int i=1; i<=m; i++){
         r=1;
@@ -40,7 +40,7 @@ int main(){
         for(int j=1; j<=m; j++){
             cin>>mx[i][j];
         }
-    } 
+    }
     int k;
     cin>>k;
     char lt;
@@ -68,4 +68,5 @@ int main(){
         }
         cout<<"\n";
     }
+    return 0;
 }
